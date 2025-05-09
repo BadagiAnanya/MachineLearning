@@ -3,12 +3,13 @@
 This project demonstrates how to leverage [BentoML](https://bentoml.org/) to build, serve, and test a machine learning model. We'll train a Support Vector Machine (SVM) using scikit-learn to classify different species of iris flowers and then deploy it as a scalable API.
 
 ## 📂 Project Layout
-**Tree View:**
+ ```bash
 IrisClassifier/
 ├── requirements.txt
 ├── service.py
 ├── test.py
 └── train.py
+ ```
 ## 🛠️ Getting Started
 
 1.  **Set up a Virtual Environment (Recommended):**
@@ -36,7 +37,8 @@ python train.py
 ```
 This command trains the SVM model on the Iris dataset and saves it as a BentoML bundle.
 
-##🚀 Serve the Model via API
+## 🚀 Serve the Model via API
+
 Deploy your trained model as a REST API with a single BentoML command.
 ```bash
 bentoml serve service:svc
@@ -46,7 +48,7 @@ Once the server starts, you can send prediction requests to the following endpoi
 http://localhost:3000/classify
 ```
 
-##🧪 Test Locally
+## 🧪 Test Locally
 Verify your model's functionality directly without needing to interact with the live API.
 ```bash
 python test.py
