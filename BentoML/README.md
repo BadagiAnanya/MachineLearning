@@ -3,13 +3,13 @@
 This project demonstrates how to train, serve, and test a machine learning model using [BentoML](https://bentoml.org/). The model classifies iris flower species using a scikit-learn SVM and is served as an API.
 
 ## 📁 Project Structure
-
+ ```bash
 BentoML/
 ├── requirements.txt
 ├── train.py
 ├── service.py
 └── test.py
-
+ ```
 
 ## 📦 Setup
 
