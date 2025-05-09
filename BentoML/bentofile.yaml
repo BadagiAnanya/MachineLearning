@@ -1,0 +1,10 @@
+service: "service.py:svc"
+labels:
+  owner: Anany
+  project: iris_classifier
+include:
+- "*.py"
+python:
+  packages:
+    - scikit-learn
+    - pandas
